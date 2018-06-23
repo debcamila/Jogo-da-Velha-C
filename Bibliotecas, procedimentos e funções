@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <windows.h>
+#include <conio.h>
+#include <ctype.h>
+#define TAM 3
+#define tam_nome_jogador 31
+
+void preencher_nome_jogador(char jogador[]);
+void comecar_jogo(int *starter);
+int jogo_da_velha(char matriz[][TAM], int starter, char op, char op2);
+void tabela(char matriz[][TAM]);
+int vitoria_jogador1(char matriz[][TAM]);
+int vitoria_jogador2(char matriz[][TAM]);
+int eh_numero(char i, char j);
+void conversao(char i_char, char j_char, int *i, int *j);
+void posicao_aleatoria_cpu(char matriz[][TAM]);
+int empate(char matriz[][TAM]);
+void limpa_matriz(char matriz[][TAM]);
+int verifica_jogada_cpu(char matriz[][TAM], int *i_jogada_cpu_nivel_medio, int
+*j_jogada_cpu_nivel_medio);
+
